@@ -24,13 +24,12 @@
 evalJeu(JoueurCourant,AutreJoueur,X,Y,Score) :-
 	%write("X: "),write(X),write(" Y: "),write(Y),write(" "),
 	assert(ennemiTest(AutreJoueur)),
-	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Modification du code source %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	poidsPuissance3(PoidsPuissance3), poidsPosition(PoidsPosition), poidsDensite(PoidsDensite), poidsAdjacence(PoidsAdjacence), poidsTest(PoidsTest), poidsConf(PoidsConf), pertubations(Pertubations),
 	evalPosition(JoueurCourant,Score1,PoidsPosition),
-	evalPuissances3(JoueurCourant,AutreJoueur,Score2,PoidsPuissance3),
+	evalJetonCentre(X,Y,Score2,PoidsPuissance3), %à modifier !!!
 	densite(JoueurCourant,Score3,PoidsDensite),
 	evalAdjacence(X,Y,JoueurCourant,Score4, PoidsAdjacence),
 	evalTest(JoueurCourant,AutreJoueur,Score5,PoidsTest),
@@ -38,7 +37,7 @@ evalJeu(JoueurCourant,AutreJoueur,X,Y,Score) :-
 	%write("Position: "),write(Score1),write(" Puissance3: "),write(Score2),write(" Densite: "),write(Score3),write(" Adjacence: "),write(Score4),write(" Test: "),write(Score5),write(" Conf: "),write(Score6), nl,
 	retract(ennemiTest(AutreJoueur)),
 	random_between(-2,2,Perturbation),
-	Score is Score1 * PoidsPosition
+	Score  is Score1 * PoidsPosition
 			+ Score2 * PoidsPuissance3
 			+ Score3 * PoidsDensite
 			+ Score4 * PoidsAdjacence
@@ -268,32 +267,40 @@ nombreJetonsJoueurConf(X,Y,_,_,_,_,_) :-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Fin de modification du code source %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%			HEURISTIQUE PAR MILIEU DE TERRAIN                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+% Donne une note d'autant plus forte qu'un jeton est centré
+evalJetonCentre(X,Y,Note, PoidsJetonCentre) :-
+	PoidsJetonCentre > 0,
+	valeurCase(X,Y,Note).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %			HEURISTIQUE PAR ADJACENCE                        %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% evalAdjacence/5(+X,+Y,+Joueur,-Note,+PoidsAdjacence)
+
 % Donne une note d'autant plus forte qu'un pion est entouré de pions amis.
 % Note s'unifie au score de la position.
-
-evalAdjacence(X,Y,Joueur,Note,PoidsAdjacence) :-
+evalAdjacence(X, Y, J, Note, PoidsAdjacence):-
 	PoidsAdjacence>0,
-	aggregate_all(count,caseAdjacente(X,Y,Joueur,_,_),N),
-	decr(N,N1),
-	pow(N1,2,Note).
-evalAdjacence(_,_,_,0,_).
+	nbPointsZoneAdjacence(J,X,Y,Note).
+	%write(Note).
 
-caseAdjacente(X,Y,Joueur,Xadj,Yadj) :-
-	incr(X,X2), decr(X,X1),
-	incr(Y,Y2), decr(Y,Y1),
-	between(X1,X2,Xadj), between(Y1,Y2,Yadj),
-	caseTest(Xadj,Yadj,Joueur).
+nbPointsZoneAdjacence(J,X,Y,NbPoints) :- aggregate_all(count,caseTestZoneAdjacence(J,_,_,X,Y),NbPoints).
+caseTestZoneAdjacence(Joueur,CurX,CurY, X,Y) :- caseTest(CurX,CurY,Joueur), zone(CurX, CurY, X,Y).
+zone(CurX,CurY,X,Y) :- 
+	CurX > 0, CurX < 8, CurY > 0, CurY < 7, 
+	diffCase(CurX, CurY, X,Y),
+	X2 is X+1, X1 is X-1,
+	CurX =< X2, CurX >= X1, 
+	Y1 is Y-1, Y2 is Y+1,
+	CurY >= Y1, CurY =< Y2.
 
-
+diffCase(CurX, CurY, X, Y) :- not((CurX == X, CurY ==Y)).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %			HEURISTIQUE PAR DENSITE DE PION                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

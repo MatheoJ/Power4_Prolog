@@ -85,7 +85,9 @@ iaMinimax(JoueurCourant,Coup,Profondeur,ChoixAlgo,ListEval) :-
     assert(poidsAdjacence(EvalAdjacence)),
     assert(poidsTest(EvalTest)),
     assert(pertubations(Pertubations)),
+
 	parcoursArbre(JoueurCourant,Profondeur,ChoixAlgo,Coup,_),
+    
     retract(testVictoireDirecte(TestVictoireDirecte)),
     retract(poidsConf(EvalConf)),
     retract(poidsPosition(EvalPosition)),
