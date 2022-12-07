@@ -455,6 +455,8 @@ evalThreeInARoW(Player, Count,PoidsThreeInARoW) :-
 evalThreeInARoW(_,0,_).
 
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %			HEURISTIQUE PUISSANCE3
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
