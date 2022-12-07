@@ -14,6 +14,9 @@
 
 :- use_module(library(random)).
 
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%
 %% Prédicats publics %%
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -22,7 +25,7 @@
 % Évalue la situation courante pour le joueur JoueurCourant étant donné que le dernier coup joué fut joué en (X,Y). Le score est pondéré par les différentes pondérations données en entrée (par assert) à evalJeu. Le score est ensuite perturbé par une valeur aléatoire, permettant de casser le caractère déterministe de l'IA.
 % Score s'unifie avec le score évalué pour la position courante.
 evalJeu(JoueurCourant,AutreJoueur,X,Y,Score) :-
-	%write("X: "),write(X),write(" Y: "),write(Y),write(" "),
+	write("X: "),write(X),write(" Y: "),write(Y),write(" "),
 	assert(ennemiTest(AutreJoueur)),
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Modification du code source %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -277,6 +280,51 @@ nombreJetonsJoueurConf(X,Y,_,_,_,_,_) :-
 evalJetonCentre(X,Y,Note, PoidsJetonCentre) :-
 	PoidsJetonCentre > 0,
 	valeurCase(X,Y,Note).
+evalJetonCentre(_,_,0,_).
+
+valeurCase(1,1,3).
+valeurCase(1,2,4).
+valeurCase(1,3,5).
+valeurCase(1,4,5).
+valeurCase(1,5,4).
+valeurCase(1,6,3).
+valeurCase(2,1,4).
+valeurCase(2,2,6).
+valeurCase(2,3,8).
+valeurCase(2,4,8).
+valeurCase(2,5,6).
+valeurCase(2,6,4).
+valeurCase(3,1,5).
+valeurCase(3,2,8).
+valeurCase(3,3,11).
+valeurCase(3,4,11).
+valeurCase(3,5,8).
+valeurCase(3,6,5).
+valeurCase(4,1,7).
+valeurCase(4,2,10).
+valeurCase(4,3,13).
+valeurCase(4,4,13).
+valeurCase(4,5,10).
+valeurCase(4,6,7).
+valeurCase(5,1,5).
+valeurCase(5,2,8).
+valeurCase(5,3,11).
+valeurCase(5,4,11).
+valeurCase(5,5,8).
+valeurCase(5,6,5).
+valeurCase(6,1,4).
+valeurCase(6,2,6).
+valeurCase(6,3,8).
+valeurCase(6,4,8).
+valeurCase(6,5,6).
+valeurCase(6,6,4).
+valeurCase(7,1,3).
+valeurCase(7,2,4).
+valeurCase(7,3,5).
+valeurCase(7,4,5).
+valeurCase(7,5,4).
+valeurCase(7,6,3).
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %			HEURISTIQUE PAR ADJACENCE                        %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -289,6 +337,7 @@ evalAdjacence(X, Y, J, Note, PoidsAdjacence):-
 	PoidsAdjacence>0,
 	nbPointsZoneAdjacence(J,X,Y,Note).
 	%write(Note).
+evalAdjacence(_,_,_,0,_).
 
 nbPointsZoneAdjacence(J,X,Y,NbPoints) :- aggregate_all(count,caseTestZoneAdjacence(J,_,_,X,Y),NbPoints).
 caseTestZoneAdjacence(Joueur,CurX,CurY, X,Y) :- caseTest(CurX,CurY,Joueur), zone(CurX, CurY, X,Y).
