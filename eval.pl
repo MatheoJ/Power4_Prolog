@@ -25,7 +25,7 @@
 % Évalue la situation courante pour le joueur JoueurCourant étant donné que le dernier coup joué fut joué en (X,Y). Le score est pondéré par les différentes pondérations données en entrée (par assert) à evalJeu. Le score est ensuite perturbé par une valeur aléatoire, permettant de casser le caractère déterministe de l'IA.
 % Score s'unifie avec le score évalué pour la position courante.
 evalJeu(JoueurCourant,AutreJoueur,X,Y,Score) :-
-	write("X: "),write(X),write(" Y: "),write(Y),write(" "),
+	%write("X: "),write(X),write(" Y: "),write(Y),write(" "),
 	assert(ennemiTest(AutreJoueur)),
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Modification du code source %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -33,7 +33,7 @@ evalJeu(JoueurCourant,AutreJoueur,X,Y,Score) :-
 	poidsPuissance3(PoidsPuissance3), poidsPosition(PoidsPosition), poidsDensite(PoidsDensite), poidsAdjacence(PoidsAdjacence), poidsTest(PoidsTest), poidsConf(PoidsConf), pertubations(Pertubations),
 	evalPosition(JoueurCourant,Score1,PoidsPosition),
 	evalJetonCentre(X,Y,Score2,PoidsPuissance3), %à modifier !!!
-	densite(JoueurCourant,Score3,PoidsDensite),
+	evalThreeInARoW(JoueurCourant,Score3,PoidsDensite),
 	evalAdjacence(X,Y,JoueurCourant,Score4, PoidsAdjacence),
 	evalTest(JoueurCourant,AutreJoueur,Score5,PoidsTest),
 	evalConf(JoueurCourant,AutreJoueur,Score6,PoidsConf),
@@ -428,6 +428,32 @@ ponderationJ(X,Y,_,-1) :-
 	ennemiTest(J),
 	caseTest(X,Y,J), !.
 ponderationJ(_,_,_,0).
+
+evalThreeInARoW(Player, Count,PoidsThreeInARoW) :-
+    PoidsThreeInARoW>0,
+    % Create a list of all positions on the board
+    findall((Row, Col), (
+        caseTest(Row, Col,Player)
+    ), Positions),
+    % Create a list of all three-in-a-row sequences on the board
+    findall(Seq, (
+        member(P1, Positions),
+		(Head1,Tail1)=P1,
+        member(P2, Positions),
+		(Head2,Tail2)=P2,
+        P1 \= P2,
+		zone(Head1,Tail1,Head2,Tail2),
+        member(P3, Positions),
+		(Head3,Tail3)=P3,
+        P1 \= P3,
+        P2 \= P3,
+		not(zone(Head1,Tail1,Head3,Tail3)),
+		zone(Head2,Tail2,Head3,Tail3),
+        Seq = [P1, P2, P3]
+    ), Sequences),
+    length(Sequences, Count).
+evalThreeInARoW(_,0,_).
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %			HEURISTIQUE PUISSANCE3

@@ -46,8 +46,8 @@
 typeHeuristique(0, 'victoireAnticipee').
 typeHeuristique(1, 'evalConf').
 typeHeuristique(2, 'evalPosition').
-typeHeuristique(3, 'evalPuissances3').
-typeHeuristique(4, 'densite').
+typeHeuristique(3, 'JetonCentre').
+typeHeuristique(4, 'ThreeInAAlmostRow').
 typeHeuristique(5, 'evalAdjacence').
 typeHeuristique(6, 'evalTest').
 typeHeuristique(7, 'pertubations').
