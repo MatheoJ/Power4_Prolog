@@ -61,7 +61,7 @@ tourAction :-
 	write('C\'est au joueur '), write(CouleurJCourant), write(' ('), write(Type), write(') de jouer.'),  nl,
 	obtenirCoup(CouleurJCourant,TypeJoueur,ListEval,Colonne),
     placerJeton(Colonne,Ligne,CouleurJCourant),
-	afficher,
+	%afficher,
 	write('Joueur '), write(CouleurJCourant), write(' vient de jouer dans la colonne '), write(Colonne), write('.'),  nl,
     statutJeu(Colonne,Ligne,CouleurJCourant).
 
