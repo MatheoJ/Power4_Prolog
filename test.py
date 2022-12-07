@@ -11,28 +11,33 @@ for ia1 in ias:
           f.write(f"initAction.\n{ia1}.\n0.\n{h}.\n{ia}.\nend.\n{ia1}.\n 0.\n{h2}.\nend.\n")
         i = i+1
 """
-nbR = 0
-nbJ = 0
-nbE = 0
 
-for i in range (3) :
-  p = subprocess.Popen("swipl .\websimulate.pl", stdin=open("entree.txt",'r'), stdout=open("sortie.txt",'w'))
-  p.wait()
-  gagnant = "egalité"
-  with open("sortie.txt",'r') as f:
-      text = f.read()
-        # Search for the string
-      index = text.find('rouge a gagn')
-      if index != -1:
-        gagnant = "rouge"
-        nbR=+1
 
-      index = text.find('jaune a gagn')
-      if index != -1:
-        gagnant = "jaune"
-        nbJ+=1
+NBREP = 4
+NBENTRE = 80
+for j in range (NBENTRE) :
+  nbR = 0
+  nbJ = 0
+  nbE = 0
+  for i in range (NBREP) :
+    p = subprocess.Popen("swipl .\websimulate.pl", stdin=open(f"entrees\entree{j}.txt",'r'), stdout=open("sortie.txt",'w'))
+    p.wait()
+    gagnant = "egalité"
+    with open("sortie.txt",'r') as f:
+        text = f.read()
+          # Search for the string
+        index = text.find('rouge a gagn')
+        if index != -1:
+          gagnant = "rouge"
+          nbR=+1
 
-nbE = 100 - (nbJ+nbR)
+        index = text.find('jaune a gagn')
+        if index != -1:
+          gagnant = "jaune"
+          nbJ+=1
+  nbE = NBREP - (nbJ+nbR)
+  with open(f"sorties\sortie{j}.txt",'w') as f:
+    f.write(f"Nombre victoire rouge : {nbR}\n Nombre victoire jaune : {nbJ}\n Nombre egalite : {nbE}\n ")
       
     
 print(nbE, nbJ, nbR)
