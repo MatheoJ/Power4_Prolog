@@ -429,7 +429,8 @@ ponderationJ(X,Y,_,-1) :-
 	caseTest(X,Y,J), !.
 ponderationJ(_,_,_,0).
 
-evalThreeInARoW(Player, Count,PoidsThreeInARoW) :-
+% evalThreeInARoW(+Player, -Count, +PoidsThreeInARoW)
+evalThreeInARoW(Player, Count, PoidsThreeInARoW) :-
     PoidsThreeInARoW>0,
     % Create a list of all positions on the board
     findall((Row, Col), (
