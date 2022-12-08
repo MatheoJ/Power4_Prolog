@@ -61,27 +61,15 @@ Saisissez votre choix :
 	7. pertubations
  ----------------------- 
 C'est au joueur rouge (IA Minimax 1 - Algo HeptarchieCorp) de jouer.
-Joueur rouge vient de jouer dans la colonne 3.
-C'est au joueur jaune (IA Minimax 1 - Algo HeptarchieCorp) de jouer.
-Joueur jaune vient de jouer dans la colonne 4.
-C'est au joueur rouge (IA Minimax 1 - Algo HeptarchieCorp) de jouer.
 Joueur rouge vient de jouer dans la colonne 4.
-C'est au joueur jaune (IA Minimax 1 - Algo HeptarchieCorp) de jouer.
-Joueur jaune vient de jouer dans la colonne 3.
-C'est au joueur rouge (IA Minimax 1 - Algo HeptarchieCorp) de jouer.
-Joueur rouge vient de jouer dans la colonne 3.
-C'est au joueur jaune (IA Minimax 1 - Algo HeptarchieCorp) de jouer.
-Joueur jaune vient de jouer dans la colonne 4.
-C'est au joueur rouge (IA Minimax 1 - Algo HeptarchieCorp) de jouer.
-Joueur rouge vient de jouer dans la colonne 2.
-C'est au joueur jaune (IA Minimax 1 - Algo HeptarchieCorp) de jouer.
-Joueur jaune vient de jouer dans la colonne 3.
-C'est au joueur rouge (IA Minimax 1 - Algo HeptarchieCorp) de jouer.
-Joueur rouge vient de jouer dans la colonne 2.
 C'est au joueur jaune (IA Minimax 1 - Algo HeptarchieCorp) de jouer.
 Joueur jaune vient de jouer dans la colonne 2.
 C'est au joueur rouge (IA Minimax 1 - Algo HeptarchieCorp) de jouer.
-Joueur rouge vient de jouer dans la colonne 1.
+Joueur rouge vient de jouer dans la colonne 4.
+C'est au joueur jaune (IA Minimax 1 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 2.
+C'est au joueur rouge (IA Minimax 1 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 4.
 C'est au joueur jaune (IA Minimax 1 - Algo HeptarchieCorp) de jouer.
 Joueur jaune vient de jouer dans la colonne 2.
 C'est au joueur rouge (IA Minimax 1 - Algo HeptarchieCorp) de jouer.
