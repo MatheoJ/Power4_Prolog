@@ -1,0 +1,133 @@
+   --- Puissance 4 ---
+   --- Veuillez choisir une IA ---
+	1. Humain
+	2. IA Aléatoire
+	11. IA Minimax 1 - Algo HeptarchieCorp
+	12. IA Minimax 2 - Algo HeptarchieCorp
+	13. IA Minimax 3 - Algo HeptarchieCorp
+	14. IA Minimax 4 - Algo HeptarchieCorp
+	15. IA Minimax 5 - Algo HeptarchieCorp
+	21. IA Minimax 1 a/ß - Algo HeptarchieCorp
+	22. IA Minimax 2 a/ß - Algo HeptarchieCorp
+	23. IA Minimax 3 a/ß - Algo HeptarchieCorp
+	24. IA Minimax 4 a/ß - Algo HeptarchieCorp
+	25. IA Minimax 5 a/ß - Algo HeptarchieCorp
+
+
+ ----------------------- 
+Saisissez votre choix :
+
+ ----------------------- 
+   --- Veuillez choisir une ou plusieurs heuristiques ---
+   --- ex: Pour choisir l'heuristique 1, entrer '1.' puis 'end.' ---
+	0. victoireAnticipee
+	1. evalConf
+	2. evalPosition
+	3. JetonCentre
+	4. ThreeInAAlmostRow
+	5. evalAdjacence
+	6. evalTest
+	7. pertubations
+ ----------------------- 
+   --- Puissance 4 ---
+   --- Veuillez choisir une IA ---
+	1. Humain
+	2. IA Aléatoire
+	11. IA Minimax 1 - Algo HeptarchieCorp
+	12. IA Minimax 2 - Algo HeptarchieCorp
+	13. IA Minimax 3 - Algo HeptarchieCorp
+	14. IA Minimax 4 - Algo HeptarchieCorp
+	15. IA Minimax 5 - Algo HeptarchieCorp
+	21. IA Minimax 1 a/ß - Algo HeptarchieCorp
+	22. IA Minimax 2 a/ß - Algo HeptarchieCorp
+	23. IA Minimax 3 a/ß - Algo HeptarchieCorp
+	24. IA Minimax 4 a/ß - Algo HeptarchieCorp
+	25. IA Minimax 5 a/ß - Algo HeptarchieCorp
+
+
+ ----------------------- 
+Saisissez votre choix :
+
+ ----------------------- 
+   --- Veuillez choisir une ou plusieurs heuristiques ---
+   --- ex: Pour choisir l'heuristique 1, entrer '1.' puis 'end.' ---
+	0. victoireAnticipee
+	1. evalConf
+	2. evalPosition
+	3. JetonCentre
+	4. ThreeInAAlmostRow
+	5. evalAdjacence
+	6. evalTest
+	7. pertubations
+ ----------------------- 
+C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 5.
+C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 1.
+C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 5.
+C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 7.
+C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 7.
+C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 4.
+C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 2.
+C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 2.
+C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 5.
+C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 5.
+C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 3.
+C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 7.
+C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 3.
+C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 3.
+C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 6.
+C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 3.
+C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 4.
+C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 6.
+C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 2.
+C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 1.
+C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 6.
+C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 6.
+C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 7.
+C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 2.
+C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 1.
+C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 4.
+C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 4.
+C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 4.
+C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 3.
+C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 5.
+C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 4.
+C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 6.
+C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 6.
+C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 7.
+Joueur jaune a gagnÃ©!
+true 
+

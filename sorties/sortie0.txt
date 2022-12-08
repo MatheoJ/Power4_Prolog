@@ -1,4 +1,0 @@
-Nombre victoire rouge : 1
- Nombre victoire jaune : 0
- Nombre egalite : 3
- 

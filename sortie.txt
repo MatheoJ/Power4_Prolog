@@ -60,356 +60,44 @@ Saisissez votre choix :
 	6. evalTest
 	7. pertubations
  ----------------------- 
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.......
-.......
-.......
-......[31mo[0m
-Joueur rouge vient de jouer dans la colonne 7.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.......
-.......
-.......
-..[33mx[0m...[31mo[0m
-Joueur jaune vient de jouer dans la colonne 3.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.......
-.......
-.......
-.[31mo[0m[33mx[0m...[31mo[0m
-Joueur rouge vient de jouer dans la colonne 2.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.......
-.......
-..[33mx[0m....
-.[31mo[0m[33mx[0m...[31mo[0m
-Joueur jaune vient de jouer dans la colonne 3.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.......
-..[31mo[0m....
-..[33mx[0m....
-.[31mo[0m[33mx[0m...[31mo[0m
-Joueur rouge vient de jouer dans la colonne 3.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.......
-..[31mo[0m....
-.[33mx[0m[33mx[0m....
-.[31mo[0m[33mx[0m...[31mo[0m
-Joueur jaune vient de jouer dans la colonne 2.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.......
-..[31mo[0m....
-.[33mx[0m[33mx[0m....
-.[31mo[0m[33mx[0m..[31mo[0m[31mo[0m
+C'est au joueur rouge (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
 Joueur rouge vient de jouer dans la colonne 6.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.......
-..[31mo[0m....
-.[33mx[0m[33mx[0m..[33mx[0m.
-.[31mo[0m[33mx[0m..[31mo[0m[31mo[0m
-Joueur jaune vient de jouer dans la colonne 6.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.......
-..[31mo[0m....
-.[33mx[0m[33mx[0m..[33mx[0m.
-.[31mo[0m[33mx[0m.[31mo[0m[31mo[0m[31mo[0m
-Joueur rouge vient de jouer dans la colonne 5.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.......
-..[31mo[0m....
-.[33mx[0m[33mx[0m..[33mx[0m.
-.[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur jaune vient de jouer dans la colonne 4.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.......
-..[31mo[0m..[31mo[0m.
-.[33mx[0m[33mx[0m..[33mx[0m.
-.[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
+C'est au joueur jaune (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 3.
+C'est au joueur rouge (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
 Joueur rouge vient de jouer dans la colonne 6.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.......
-..[31mo[0m..[31mo[0m.
-.[33mx[0m[33mx[0m..[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
+C'est au joueur jaune (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
 Joueur jaune vient de jouer dans la colonne 1.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.......
-..[31mo[0m..[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m.[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
+C'est au joueur rouge (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
 Joueur rouge vient de jouer dans la colonne 4.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.......
-..[31mo[0m..[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur jaune vient de jouer dans la colonne 5.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.......
-..[31mo[0m[31mo[0m.[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur rouge vient de jouer dans la colonne 4.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.......
-..[31mo[0m[31mo[0m[33mx[0m[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur jaune vient de jouer dans la colonne 5.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.......
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur rouge vient de jouer dans la colonne 2.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.[33mx[0m.....
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur jaune vient de jouer dans la colonne 2.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.[33mx[0m[31mo[0m....
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur rouge vient de jouer dans la colonne 3.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.[33mx[0m[31mo[0m..[33mx[0m.
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur jaune vient de jouer dans la colonne 6.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-.......
-.[33mx[0m[31mo[0m[31mo[0m.[33mx[0m.
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur rouge vient de jouer dans la colonne 4.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-...[33mx[0m...
-.[33mx[0m[31mo[0m[31mo[0m.[33mx[0m.
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur jaune vient de jouer dans la colonne 4.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-...[33mx[0m...
-.[33mx[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m.
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur rouge vient de jouer dans la colonne 5.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-..[33mx[0m[33mx[0m...
-.[33mx[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m.
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur jaune vient de jouer dans la colonne 3.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.......
-..[33mx[0m[33mx[0m[31mo[0m..
-.[33mx[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m.
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur rouge vient de jouer dans la colonne 5.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-..[33mx[0m....
-..[33mx[0m[33mx[0m[31mo[0m..
-.[33mx[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m.
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur jaune vient de jouer dans la colonne 3.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-..[33mx[0m....
-..[33mx[0m[33mx[0m[31mo[0m[31mo[0m.
-.[33mx[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m.
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur rouge vient de jouer dans la colonne 6.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-..[33mx[0m..[33mx[0m.
-..[33mx[0m[33mx[0m[31mo[0m[31mo[0m.
-.[33mx[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m.
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur jaune vient de jouer dans la colonne 6.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-..[33mx[0m[31mo[0m.[33mx[0m.
-..[33mx[0m[33mx[0m[31mo[0m[31mo[0m.
-.[33mx[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m.
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur rouge vient de jouer dans la colonne 4.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-..[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-..[33mx[0m[33mx[0m[31mo[0m[31mo[0m.
-.[33mx[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m.
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur jaune vient de jouer dans la colonne 5.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-..[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-.[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m.
-.[33mx[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m.
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur rouge vient de jouer dans la colonne 2.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-..[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-.[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m.
-.[33mx[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m.
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m.
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m[33mx[0m
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur jaune vient de jouer dans la colonne 7.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-..[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-.[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m.
-.[33mx[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m.
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m[31mo[0m
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m[33mx[0m
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur rouge vient de jouer dans la colonne 7.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-..[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-.[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m.
-.[33mx[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m[33mx[0m
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m[31mo[0m
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m[33mx[0m
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur jaune vient de jouer dans la colonne 7.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-..[33mx[0m[31mo[0m[33mx[0m[33mx[0m.
-.[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-.[33mx[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m[33mx[0m
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m[31mo[0m
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m[33mx[0m
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur rouge vient de jouer dans la colonne 7.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-..[33mx[0m[31mo[0m[33mx[0m[33mx[0m[33mx[0m
-.[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-.[33mx[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m[33mx[0m
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m[31mo[0m
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m[33mx[0m
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur jaune vient de jouer dans la colonne 7.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.[31mo[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m[33mx[0m
-.[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-.[33mx[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m[33mx[0m
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m[31mo[0m
-.[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m[33mx[0m
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur rouge vient de jouer dans la colonne 2.
-C'est au joueur jaune (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.[31mo[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m[33mx[0m
-.[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-.[33mx[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m[33mx[0m
-.[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m[31mo[0m
-[33mx[0m[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m[33mx[0m
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
+C'est au joueur jaune (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
 Joueur jaune vient de jouer dans la colonne 1.
-C'est au joueur rouge (IA Minimax 2 - Algo HeptarchieCorp) de jouer.
-1234567
-.[31mo[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m[33mx[0m
-.[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-.[33mx[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m[33mx[0m
-[31mo[0m[31mo[0m[31mo[0m[31mo[0m[33mx[0m[31mo[0m[31mo[0m
-[33mx[0m[33mx[0m[33mx[0m[31mo[0m[33mx[0m[33mx[0m[33mx[0m
-[33mx[0m[31mo[0m[33mx[0m[33mx[0m[31mo[0m[31mo[0m[31mo[0m
-Joueur rouge vient de jouer dans la colonne 1.
+C'est au joueur rouge (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 4.
+C'est au joueur jaune (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 3.
+C'est au joueur rouge (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 5.
+C'est au joueur jaune (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 7.
+C'est au joueur rouge (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 6.
+C'est au joueur jaune (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 6.
+C'est au joueur rouge (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 4.
+C'est au joueur jaune (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 4.
+C'est au joueur rouge (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 7.
+C'est au joueur jaune (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 5.
+C'est au joueur rouge (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 5.
+C'est au joueur jaune (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
+Joueur jaune vient de jouer dans la colonne 5.
+C'est au joueur rouge (IA Minimax 3 - Algo HeptarchieCorp) de jouer.
+Joueur rouge vient de jouer dans la colonne 3.
 Joueur rouge a gagné!
 true 
+

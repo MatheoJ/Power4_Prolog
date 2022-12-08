@@ -1,32 +1,46 @@
 import subprocess
-"""
+import openpyxl
+
+NBREP = 1
+NBENTRE = 80
 ias =  [11,12,13]
 heuristiques = [3,4,5] #jeton centre, 3 in a row, adjacence
 i=0
+corresp = []
 for ia1 in ias:
   for ia in ias:
     for h in heuristiques:
       for h2 in heuristiques:
-        with open(f"entrees/entree{i}.txt",'w') as f:
-          f.write(f"initAction.\n{ia1}.\n0.\n{h}.\n{ia}.\nend.\n{ia1}.\n 0.\n{h2}.\nend.\n")
-        i = i+1
-"""
+        
+        corresp.append((ia,ia1,h,h2))
+        i+=1
 
+# Create a new Excel workbook
+wb = openpyxl.Workbook()
 
-NBREP = 4
-NBENTRE = 80
+# Get the active sheet in the workbook
+sheet = wb.active
+sheet.append(["IA1","IA2","H1","H2","VR","VJ","EGAL", "NBCOUP"])
+
 for j in range (NBENTRE) :
   nbR = 0
   nbJ = 0
   nbE = 0
-  for i in range (NBREP) :
-    p = subprocess.Popen("swipl .\websimulate.pl", stdin=open(f"entrees\entree{j}.txt",'r'), stdout=open("sortie.txt",'w'))
-    p.wait()
-    gagnant = "egalité"
-    with open("sortie.txt",'r') as f:
+  nbCoup=0 
+  
+  with open(f"entrees/entree{j}.txt","r") as entree:
+    
+    for i in range(NBREP):
+      with open (f"sortie{i}_{j}.txt","w") as f:
+        p = subprocess.Popen("swipl .\websimulate.pl", stdin=entree, stdout=f)
+        p.wait()
+      with open(f"sortie{i}_{j}.txt","r") as f:
+        gagnant = "egalité"
         text = f.read()
           # Search for the string
         index = text.find('rouge a gagn')
+        nbCoup += text.count("C'est au joueur")
+        
         if index != -1:
           gagnant = "rouge"
           nbR=+1
@@ -35,10 +49,11 @@ for j in range (NBENTRE) :
         if index != -1:
           gagnant = "jaune"
           nbJ+=1
-  nbE = NBREP - (nbJ+nbR)
-  with open(f"sorties\sortie{j}.txt",'w') as f:
-    f.write(f"Nombre victoire rouge : {nbR}\n Nombre victoire jaune : {nbJ}\n Nombre egalite : {nbE}\n ")
-      
-    
-print(nbE, nbJ, nbR)
 
+  nbE = NBREP - (nbJ+nbR)
+  
+  entr = corresp[j]
+  sheet.append([entr[0],entr[1],entr[2],entr[3],nbR, nbJ, nbE, nbCoup/NBREP])
+  print(nbE, nbJ, nbR)
+
+wb.save("output2.xlsx")
